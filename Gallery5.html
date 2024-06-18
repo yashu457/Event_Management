@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Image Gallery</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Custom CSS styles */
+        body {
+            background-image: url('http://www.pixelstalk.net/wp-content/uploads/2016/04/Pictures-simple-backgrounds-wallpapers-HD.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-brand {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .container-white-box {
+            background-image: url('http://www.example.com/path/to/your/background-image.jpg'); /* Specify the URL of your background image */
+            background-size: cover;
+            background-position: center;
+            padding: 50px 0; /* Adjust padding as needed */
+            border-radius: 10px;
+            margin-top: 20px;
+            color: #fff; /* Text color for the container content */
+        }
+
+        .event {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for event cards */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect for event cards */
+            margin-bottom: 30px;
+        }
+
+        .event img {
+            max-width: 100%;
+            border-radius: 8px; /* Rounded corners for event images */
+        }
+
+        .event h4 {
+            margin-top: 0; /* Remove top margin for event titles */
+        }
+
+        .event p {
+            color: #555; /* Text color for event descriptions */
+        }
+
+        .search-form {
+            margin-right: 10px; /* Adjust margin as needed */
+            width: 200px; /* Adjust width of the search form input field */
+        }
+    </style>
+</head>
+<body>
+
+<header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container d-flex justify-content-center">
+        <a class="navbar-brand" href="#"><h2>Events Image Gallery</h2></a>
+    </div>
+</header>
+
+<!-- Food Festivals Events Container -->
+<div class="container container-white-box">
+    <h2>Food Festivals Events</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="event">
+                <img src="https://takenewyorktours.com/wp-content/uploads/2018/05/The-9th-Avenue-International-Food-Festival.jpg" alt="Food Festival 1">
+                <h4>International Food Festival</h4>
+                <p>Explore cuisines from around the world at this exciting international food festival.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="event">
+                <img src="http://www.kristofer.ro/wp-content/uploads/2017/03/street-food-festival-cluj.jpg" alt="Food Festival 2">
+                <h4>Street Food Events</h4>
+                <p>Indulge in delicious street food classics and creative culinary creations.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="event">
+                <img src="https://blog.bedandchai.com/wp-content/uploads/2016/01/delhifestival.jpg" alt="Food Festival 3">
+                <h4>Food Pairing Event</h4>
+                <p>Enjoy exquisite dishes paired with fine wines at this elegant food and wine event.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="event">
+                <img src="https://southernharvest.org.au/wp-content/uploads/2019/04/HarvestFest2018-97crop3.jpg" alt="Food Festival 4">
+                <h4>Local Harvest Events</h4>
+                <p>Celebrate the flavors of the season with fresh local produce and artisanal goods.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="event">
+                <img src="https://i.pinimg.com/originals/db/e6/1a/dbe61a321b81f6944482ad5f1a54f687.jpg" alt="Food Festival 5">
+                <h4>Chocolate Events</h4>
+                <p>Indulge your sweet tooth with a variety of chocolate treats and desserts.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="event">
+                <img src="https://www.vmcdn.ca/f/files/glaciermedia/import/lmp-all/1472644-15bbqcookoff.jpg" alt="Food Festival 6">
+                <h4>BBQ Cook-Off Events</h4>
+                <p>Watch grill masters compete and savor mouthwatering BBQ creations.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Include Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

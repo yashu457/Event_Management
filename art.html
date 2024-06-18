@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Events</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Body background */
+        body {
+            background-image: url('http://www.barcelonaconnect.com/wp-content/uploads/2016/01/deporteenimagenes.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            /* Optional: Add a background color fallback */
+            background-color: #f8f9fa; /* Light gray */
+            /* Adjust text color for better readability on top of the background image */
+            color: #333;
+            padding-bottom: 100px; /* Add padding at the bottom for footer */
+        }
+
+        /* Header styles */
+        .header {
+            padding: 20px 0;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-bottom: 1px solid #ccc; /* Bottom border for separation */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+        }
+
+        /* Carousel image styles */
+        .carousel-item img {
+            max-height: 400px; /* Adjust the maximum height of carousel images */
+            width: auto; /* Maintain aspect ratio */
+            object-fit: cover;
+        }
+
+        /* White box (card) styles */
+        .white-box {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Footer styles */
+   
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            text-align: center;
+            padding: 10px 0;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+        }
+
+        footer p {
+            margin: 0; /* Remove default margin for <p> inside footer */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+     
+            
+        </ul>
+    </div>
+</nav>
+
+<!-- Header -->
+<div class="header">
+    <h1>Welcome to Art & Exbhition Events</h1>
+</div>
+
+<div class="container mt-5">
+    <!-- Carousel -->
+    <div id="eventCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://dwu32cgxelq1c.cloudfront.net/local_newspapers/sites/27/2016/08/DSC_0238-Large.jpg" class="d-block w-100" alt="Event 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Solo Exhibitions Events</h5>
+                    <p>Description of Event 1</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.artrabbit.com/events/the-31st-annual-contemporary-art-education-exhibit/images/8Odni5UOhIog/1500x907/BRIC5-18-1831467-30th-Student-Show-by-Jason-Wyche-0.jpg" class="d-block w-100" alt="Event 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Group Exhibitions Events</h5>
+                    <p>Description of Event 2</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://laistassets.scprdev.org/i/462e59ea763d4e524c6f50a44ef28f2c/5c48f94e496b7c00094328ce-eight.jpg" class="d-block w-100" alt="Event 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Contemporary Art Shows Events</h5>
+                    <p>Description of Event 3</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.nhm.ac.uk/content/dam/wpy/images/large/wpy-2014-gallery-133423.jpg" class="d-block w-100" alt="Event 4">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Photography Exbhition Events</h5>
+                    <p>Description of Event 4</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://i1.wp.com/www.artinsurancenow.com/blog/wp-content/uploads/2019/03/Art-fair.jpg?fit=1920%2C1260&ssl=1" class="d-block w-100" alt="Event 5">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Art Fairs Events</h5>
+                    <p>Description of Event 5</p>
+                </div>
+            </div>
+
+             <div class="carousel-item">
+                <img src="http://en.chinaculture.org/attachement/jpg/site1/20150525/002564bc712b16ccd7ee08.jpg" class="d-block w-100" alt="Event 4">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Museum Exbhitions Events</h5>
+                    <p>Description of Event 4</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#eventCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#eventCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- White box (card) for additional content -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .white-box {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        /* Customize specific sections */
+
+        /* Football Events */
+        .football-section {
+            background-color: #e3f2fd;
+        }
+
+        /* Basketball Events */
+        .basketball-section {
+            background-color: #e8f5e9;
+        }
+
+        /* Volleyball Events */
+        .volleyball-section {
+            background-color: #fff9c4;
+        }
+
+        /* Cricket Events */
+        .cricket-section {
+            background-color: #fce4ec;
+        }
+
+        /* Badminton Events */
+        .badminton-section {
+            background-color: #f3e5f5;
+        }
+    </style>
+</head>
+<body>
+    <div class="white-box football-section">
+        <h2> Solo Exhibitions Events</h2>
+        <p>Solo exhibitions focus on the work of a single artist, presenting a cohesive body of work that highlights their artistic vision, themes, and techniques.</p>
+        
+        <!-- <h3>Inter-College Football Tournaments:</h3>
+        <p>Colleges organize annual or biennial football championships where teams from different colleges compete. These tournaments attract teams from various institutions and are often organized at district, state, or university levels.</p>
+        
+        <h3>University-Level Tournaments:</h3>
+        <p>Universities conduct football tournaments involving teams from affiliated colleges. These tournaments feature knockout matches, league stages, and finals, providing college-level players a competitive platform to showcase their skills.</p> -->
+    </div>
+
+    <body>
+        <div class="white-box basketball-section">
+            <h2> Group Exhibitions Events</h2>
+            <p> Group exhibitions feature artworks by multiple artists, often centered around a common theme, concept, or medium. They offer a diverse range of artistic perspectives within a single exhibition. </p>
+            
+            <!-- <h3>Inter-College Basketball Tournaments:</h3>
+            <p>Colleges organize annual or biennial basketball championships where teams from different colleges compete. These tournaments attract teams from various institutions and are often organized at district, state, or university levels.</p>
+            
+            <h3>University-Level Tournaments:</h3>
+            <p>Universities conduct basketball tournaments involving teams from affiliated colleges. These tournaments may include knockout matches, league stages, and finals, providing college-level players a competitive platform to showcase their skills.</p> -->
+        </div>
+    </body>
+
+    <body>
+        <div class="white-box volleyball-section">
+            <h2>Contemporary Art Shows Events</h2>
+            <p>These exhibitions showcase contemporary artworks, including paintings, sculptures, installations, digital art, and mixed-media pieces created by artists exploring modern themes and techniques.</p>
+            
+            <!-- <h3>Inter-College Volleyball Tournaments:</h3>
+            <p>Colleges organize annual or biennial volleyball championships where teams from different colleges compete against each other. These tournaments are typically held at district, state, or university levels, attracting teams from various institutions.</p>
+            
+            <h3>District-Level Tournaments:</h3>
+            <p>Some colleges participate in district-level volleyball tournaments where they compete against other colleges within their district. Winning teams from these tournaments often progress to higher-level competitions.</p>
+            
+            <h3>Intra-College Competitions:</h3>
+            <p>Within colleges, departments or student clubs may organize volleyball leagues. These leagues provide opportunities for students of different academic programs to form teams and compete against each other.</p> -->
+        </div>
+    </body>
+
+    <body>
+        <div class="white-box cricket-section">
+            <h2>Photography Exhibitions Events</h2>
+            <p>Photography exhibitions feature works by photographers, showcasing various genres such as portrait photography, landscape photography, documentary photography, and conceptual photography.</p>
+            
+            <!-- <h3>Inter-College Championships:</h3>
+            <p>Colleges organize annual or biennial cricket championships where teams from different colleges compete against each other. These tournaments are often organized at district, state, or university levels, culminating in a final championship match.</p>
+            
+            <h3>University Cricket Tournaments:</h3>
+            <p>Universities conduct cricket tournaments involving teams from affiliated colleges. These tournaments may include knockout matches, league stages, and finals, providing a platform for college-level cricketers to showcase their skills.</p>
+        </div> -->
+        </div>
+    </body>
+
+    <div class="white-box badminton-section">
+        <h2>Art Fairs Events</h2>
+        <p>Art fairs bring together multiple galleries and artists to display and sell artworks to collectors, dealers, and art enthusiasts. They often include panel discussions, artist talks, and special events.</p>
+        
+        <!-- <h3>Inter-College Badminton Tournaments:</h3>
+        <p>Colleges organize annual or biennial badminton championships where teams or individual players from different colleges compete. These tournaments often feature singles, doubles, and mixed doubles categories.</p>
+        
+        <h3>University Badminton Tournaments:</h3>
+        <p>Universities conduct badminton tournaments involving teams or players from affiliated colleges. These tournaments may have league stages, knockout matches, and finals, offering a competitive environment for college-level players.</p> -->
+    </div>
+
+    <div class="white-box badminton-section">
+        <h2>Museum Exhibitions Events</h2>
+        <p>Museums host exhibitions that highlight specific artists, artistic movements, or historical periods. These exhibitions provide educational and cultural experiences for visitors.</p>
+        
+        <!-- <h3>Inter-College Badminton Tournaments:</h3>
+        <p>Colleges organize annual or biennial badminton championships where teams or individual players from different colleges compete. These tournaments often feature singles, doubles, and mixed doubles categories.</p>
+        
+        <h3>University Badminton Tournaments:</h3>
+        <p>Universities conduct badminton tournaments involving teams or players from affiliated colleges. These tournaments may have league stages, knockout matches, and finals, offering a competitive environment for college-level players.</p> -->
+    </div>
+</body>
+<!-- Footer -->
+<footer>
+    <p> 2024 Art & Exbhition Events</p>
+</footer>
+
+<!-- Link Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

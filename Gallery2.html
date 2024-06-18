@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Image Gallery</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Custom CSS styles */
+        body {
+            background-image: url('http://www.pixelstalk.net/wp-content/uploads/2016/04/Pictures-simple-backgrounds-wallpapers-HD.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-brand {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .container-white-box {
+            background-image: url('http://www.example.com/path/to/your/background-image.jpg'); /* Specify the URL of your background image */
+            background-size: cover;
+            background-position: center;
+            padding: 50px 0; /* Adjust padding as needed */
+            border-radius: 10px;
+            margin-top: 20px;
+            color: #fff; /* Text color for the container content */
+        }
+
+        .event {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for event cards */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect for event cards */
+            margin-bottom: 30px;
+        }
+
+        .event img {
+            max-width: 100%;
+            border-radius: 8px; /* Rounded corners for event images */
+        }
+
+        .event h4 {
+            margin-top: 0; /* Remove top margin for event titles */
+        }
+
+        .event p {
+            color: #555; /* Text color for event descriptions */
+        }
+
+        .search-form {
+            margin-right: 10px; /* Adjust margin as needed */
+            width: 200px; /* Adjust width of the search form input field */
+        }
+    </style>
+</head>
+<body>
+
+<header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container d-flex justify-content-center">
+        <a class="navbar-brand" href="#"><h2>Events Image Gallery</h2></a>
+    </div>
+</header>
+ 
+
+
+<!-- Event Cards -->
+<div class="container container-white-box">
+    <h2>Concerts and Music Festivals Events</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="event">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.4e5TvK5WU2nCPRyiQF6_awHaE8&pid=Api&P=0&h=180" alt="Summer Music Festival">
+                <h4>Summer Music Festival</h4>
+                <p>A vibrant summer festival featuring live music from top artists.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="event">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.Pv55Av-0EQBgwp06IYRkuAHaFj&pid=Api&P=0&h=180" alt="Rock Concert">
+                <h4>Rock Concert</h4>
+                <p>An electrifying rock concert with popular bands and musicians.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="event">
+                <img src="https://tse2.mm.bing.net/th?id=OIP._BJYNuoZchL0fSvZz7is5QHaE8&pid=Api&P=0&h=180" alt="Jazz Evening">
+                <h4>Jazz Evening</h4>
+                <p>Enjoy a relaxing jazz evening with smooth tunes and live performances.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="event">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.KWWxEBMv-SgSPDcEiULqSwHaE7&pid=Api&P=0&h=180" alt="Electronic Music Festival">
+                <h4>Electronic Music Festival</h4>
+                <p>Dance the night away at this electronic music festival featuring renowned DJs.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="event">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.6FDMlxiVu_tc3FQPnPtB-wHaE8&pid=Api&P=0&h=180" alt="Indie Music Fest">
+                <h4>India Music Fest</h4>
+                <p>Discover new india bands and artists at this unique music festival.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="event">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.5zpBL4jtHrclDxeNXMbr8wHaE7&pid=Api&P=0&h=180" alt="Classical Music Showcase">
+                <h4>Classical Music Showcase</h4>
+                <p>Experience classical music in a stunning outdoor setting.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Include Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Image Gallery</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Custom CSS styles */
+        body {
+            background-image: url('http://www.pixelstalk.net/wp-content/uploads/2016/04/Pictures-simple-backgrounds-wallpapers-HD.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-brand {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .container-white-box {
+            background-image: url('http://www.example.com/path/to/your/background-image.jpg'); /* Specify the URL of your background image */
+            background-size: cover;
+            background-position: center;
+            padding: 50px 0; /* Adjust padding as needed */
+            border-radius: 10px;
+            margin-top: 20px;
+            color: #fff; /* Text color for the container content */
+        }
+
+        .event {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for event cards */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect for event cards */
+            margin-bottom: 30px;
+        }
+
+        .event img {
+            max-width: 100%;
+            border-radius: 8px; /* Rounded corners for event images */
+        }
+
+        .event h4 {
+            margin-top: 0; /* Remove top margin for event titles */
+        }
+
+        .event p {
+            color: #555; /* Text color for event descriptions */
+        }
+
+        .search-form {
+            margin-right: 10px; /* Adjust margin as needed */
+            width: 200px; /* Adjust width of the search form input field */
+        }
+    </style>
+</head>
+<body>
+
+<header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container d-flex justify-content-center">
+        <a class="navbar-brand" href="#"><h2>Events Image Gallery</h2></a>
+    </div>
+</header>
+ 
+
+<div class="container container-white-box">
+    <h2>Sports Events</h2>
+    <!-- Sports Event Cards -->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="event">
+                <img src="https://www.mykhel.com/img/2023/03/india-football-team-1678615036.jpg" alt="Football Event">
+                <h4>Football Championship</h4>
+                <p>A thrilling championship match with top teams competing.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="event">
+                <img src="https://thebridge.in/h-upload/2022/06/18/30716-u-12-south-asian-tennis-championships.jpg" alt="Tennis Match">
+                <h4>Tennis Tournament</h4>
+                <p>Exciting tennis matches featuring world-class players.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="event">
+                <img src="https://thebetterindia-english.s3.ap-south-1.amazonaws.com/uploads/2015/10/basket.jpg" alt="Basketball Game">
+                <h4>Basketball Showdown</h4>
+                <p>An intense basketball game between rival teams.</p>
+            </div>
+        </div>
+        <!-- Add more event containers as needed -->
+        <!-- Example additional events -->
+        <div class="col-md-4">
+            <div class="event">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.m5xC0Jyb2-MaWzqg9rdoYgHaEK&pid=Api&P=0&h=180" alt="Cricket Match">
+                <h4>Cricket League</h4>
+                <p>Exciting cricket matches with top players from around the world.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="event">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.8Rbma7owd18ieEiCTfdx-wHaEK&pid=Api&P=0&h=180" alt="Golf Tournament">
+                <h4>Golf Masters</h4>
+                <p>Watch elite golfers compete in this prestigious tournament.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="event">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.nudI8h0UG9O3hV2eIM6GzQHaFJ&pid=Api&P=0&h=180" alt="Swimming Competition">
+                <h4>Swimming Championship</h4>
+                <p>Witness thrilling races in this international swimming competition.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="event">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.OjnTGcutfdGjdhk6GMURYQHaEM&pid=Api&P=0&h=180" alt="Athletics Meet">
+                <h4>Athletics Meet</h4>
+                <p>Experience high-speed races and field events.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="event">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.gzhNdK3J6VTwreSiNtvthAHaFH&pid=Api&P=0&h=180" alt="Boxing Match">
+                <h4>Boxing Showdown</h4>
+                <p>Thrilling boxing matches featuring heavyweight contenders.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="event">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.WVhHIHuSXifO_a_jN2ZUlgHaEK&pid=Api&P=0&h=180" alt="Volleyball Game">
+                <h4>Volleyball Tournament</h4>
+                <p>Exciting volleyball games with intense spikes and rallies.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="event">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.-3pSUM8qaok-BIvzazoAUwHaEJ&pid=Api&P=0&h=180" alt="Cycling Race">
+                <h4>Cycling Race</h4>
+                <p>Thrilling cycling race across challenging terrain.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="event">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.O-QlUHtbLCB5By4VA1L5uwHaEK&pid=Api&P=0&h=180" alt="Hockey Match">
+                <h4>Hockey Showdown</h4>
+                <p>Exciting hockey match between top teams.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="event">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.ZBZ1EfZfnN-KKfMjFW47XAHaDL&pid=Api&P=0&h=180" alt="Table Tennis Tournament">
+                <h4>Table Tennis Championship</h4>
+                <p>Intense table tennis matches featuring skilled players.</p>
+            </div>
+        </div>
+        <!-- Add more event containers as needed -->
+    </div>
+</div>
+
+<!-- Include Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Image Gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS styles */
+        body {
+            background-image: url('http://www.pixelstalk.net/wp-content/uploads/2016/04/Pictures-simple-backgrounds-wallpapers-HD.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container-white-box {
+            background-image: url('http://www.example.com/path/to/your/background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 50px 0; /* Adjust padding as needed */
+            border-radius: 10px;
+            margin-top: 20px;
+            color: #fff; /* Text color for the container content */
+        }
+    </style>
+</head>
+<body>
+
+<header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container d-flex justify-content-center">
+        <a class="navbar-brand" href="#"><h2>Events Image Gallery</h2></a>
+    </div>
+</header>
+
+<div class="container mt-4">
+    <form class="d-flex" onsubmit="searchEvents(event)">
+        <input id="searchInput" class="form-control me-2" type="search" placeholder="Search Events Gallery" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+        <!-- Hidden links for gallery redirection -->
+        <a href="Gallery1.html" id="gallery1Link" style="display: none;"></a>
+        <a href="Gallery2.html" id="gallery2Link" style="display: none;"></a>
+        <a href="Gallery3.html" id="gallery3Link" style="display: none;"></a>
+        <a href="Gallery4.html" id="gallery4Link" style="display: none;"></a>
+        <a href="Gallery5.html" id="gallery5Link" style="display: none;"></a>
+    </form>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script>
+    function searchEvents(event) {
+        event.preventDefault(); // Prevent default form submission
+        var searchTerm = document.getElementById('searchInput').value.trim().toLowerCase();
+        
+        switch (searchTerm) {
+            case 'sportevents':
+                document.getElementById('gallery1Link').click();
+                break;
+            case 'concerts and music festivals':
+                document.getElementById('gallery2Link').click();
+                break;
+            case 'trade shows':
+                document.getElementById('gallery3Link').click();
+                break;
+            case 'art exhibitions and galleries':
+                document.getElementById('gallery4Link').click();
+                break;
+            case 'food festival events':
+                document.getElementById('gallery5Link').click();
+                break;
+            default:
+                alert('Gallery not found. Please try again.');
+        }
+    }
+</script>
+
+</body>
+</html>

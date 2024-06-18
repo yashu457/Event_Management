@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Image Gallery</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Custom CSS styles */
+        body {
+            background-image: url('https://www.hardwarefield.com/wp-content/uploads/2020/08/design-an-attractive-background-for-your-website.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-brand {
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center; /* Center align the navbar brand */
+            width: 100%; /* Make the navbar brand occupy full width */
+        }
+
+        .container-white-box {
+            background-image: url('https://www.hardwarefield.com/wp-content/uploads/2020/08/design-an-attractive-background-for-your-website.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 50px 0; /* Adjust padding as needed */
+            border-radius: 10px;
+            margin-top: 20px;
+            color: #fff; /* Text color for the container content */
+        }
+
+        .event {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for event cards */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect for event cards */
+            margin-bottom: 30px;
+        }
+
+        .event img {
+            max-width: 100%;
+            border-radius: 8px; /* Rounded corners for event images */
+        }
+
+        .event h4 {
+            margin-top: 0; /* Remove top margin for event titles */
+        }
+
+        .event p {
+            color: #555; /* Text color for event descriptions */
+        }
+
+        .search-form {
+            margin-right: 10px; /* Adjust margin as needed */
+            width: 200px; /* Adjust width of the search form input field */
+        }
+        
+    .event-container {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Transparent */
+        -webkit-tap-highlight-color: transparent; /* For newer browsers */
+        touch-action: manipulation; /* Optional: Improve touch responsiveness */
+    }
+
+
+    </style>
+</head>
+<body>
+
+    <style>
+        .event-link,
+        .event-link:hover,
+        .event-link:active,
+        .event-link:focus {
+            text-decoration: none; /* Remove underline on link */
+            color: inherit; /* Inherit text color */
+        }
+    
+        .event {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Transparent tap highlight */
+            -webkit-tap-highlight-color: transparent; /* For newer browsers */
+            cursor: pointer; /* Show pointer cursor on hover */
+        }
+        h2 {
+            color: #ffffff; /* Set the color of <h2> to white */
+          
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+
+<!-- Navbar -->
+<header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand" href="#"><h2>Books Events</h2></a>
+ 
+    </div>
+</header>
+<h2>Up Coming Events</h2>
+<!-- Event Cards -->
+<div class="row">
+  
+    <!-- Event Card 1 -->
+    <div class="col-md-4">
+        <a href="mainbook.html" class="event-link">
+            <div class="event">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.4e5TvK5WU2nCPRyiQF6_awHaE8&pid=Api&P=0&h=180" alt="Summer Music Festival">
+                <h4>Summer Music Festival</h4>
+                <p>A vibrant summer festival featuring live music from top artists.</p>
+                <!-- Updated information for Summer Music Festival -->
+                <p><strong>Date:</strong> August 10-12, 2024</p>
+                <p><strong>Location:</strong> City Park Amphitheater</p>
+                <p>Join us for three days of unforgettable performances!</p>
+                <!-- End of updated information -->
+            </div>
+        </a>
+    </div>
+
+
+        <div class="col-md-4">
+            <a href="mainbook.html" class="event-link">
+            <div class="event">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.IibfeSbpr4IxuKQyP-QTdAHaEu&pid=Api&P=0&h=180" alt="Art Exhibition">
+                <h4>Contemporary Art Exhibition</h4>
+                <p>Explore cutting-edge contemporary artworks at this exhibition.</p>
+                <!-- Updated information for Contemporary Art Exhibition -->
+                <p><strong>Date:</strong> October 1-30, 2024</p>
+                <p><strong>Location:</strong> City Art Gallery</p>
+                <p>Immerse yourself in innovative artistry!</p>
+                <!-- End of updated information -->
+            </div>
+        </div>
+        <div class="col-md-4">
+            <a href="mainbook.html" class="event-link">
+            <div class="event">
+                <img src="https://tse2.mm.bing.net/th?id=OIP._BJYNuoZchL0fSvZz7is5QHaE8&pid=Api&P=0&h=180" alt="Jazz Evening">
+                <h4>Jazz Evening</h4>
+                <p>Enjoy a relaxing jazz evening with smooth tunes and live performances.</p>
+                <!-- Updated information for Jazz Evening -->
+                <p><strong>Date:</strong> October 20, 2024</p>
+                <p><strong>Location:</strong> Jazz Club House</p>
+                <p>Indulge in an evening of soulful jazz melodies!</p>
+                <!-- End of updated information -->
+            </div>
+        </div>
+
+        <!-- Add six more event containers below -->
+        <div class="col-md-4">
+            <a href="mainbook.html" class="event-link">
+            <div class="event">
+                <img src="https://tse1.explicit.bing.net/th?id=OIP._cdAldFf1vxiPLnx6VVD7AHaEA&pid=Api&P=0&h=180" alt="Event Name">
+                <h4>Sculpture Showcase</h4>
+                <p>Experience breathtaking sculptures in various mediums.</p>
+                <!-- Updated information for Sculpture Showcase -->
+                <p><strong>Date:</strong>February 10-17, 2025</p>
+                <p><strong>Location:</strong> Sculpture Park</p>
+                <p>Admire the artistry of sculptors!</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <a href="mainbook.html" class="event-link">
+            <div class="event">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.Pv55Av-0EQBgwp06IYRkuAHaFj&pid=Api&P=0&h=180" alt="Event Name">
+                <h4>Rock Concert</h4>
+                <p>An electrifying rock concert with popular bands and musicians.</p>
+                <!-- Updated information for Rock Concert -->
+                <p><strong>Date:</strong> September 5-6, 2024</p>
+                <p><strong>Location:</strong> Downtown Arena</p>
+                <p>Get ready to rock out with your favorite bands!</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <a href="mainbook.html" class="event-link">
+            <div class="event">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.IiGP9EzWpEUgN-gbLDjVeQHaEA&pid=Api&P=0&h=180" alt="Event Name">
+                <h4>Abstract Art Display</h4>
+                <p>Delve into the world of abstract paintings by talented artists.</p>
+                <!-- Updated information for Abstract Art Display -->
+                <p><strong>Date:</strong> March 15, 2025</p>
+                <p><strong>Location:</strong> Urban Art Gallery</p>
+                <p>Experience art in its purest form!</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <a href="mainbook.html" class="event-link">
+            <div class="event">
+                <img src="https://www.mykhel.com/img/2023/03/india-football-team-1678615036.jpg" alt="Event Name">
+                <h4>Football Events</h4>
+                <p>A thrilling championship match with top teams competing.</p>
+                <!-- Updated information for Abstract Art Display -->
+                <p><strong>Date:</strong>Novemeber 15-18, 2024</p>
+                <p><strong>Location:</strong> Captown </p>
+                <p>Experience Football in its purest form!</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <a href="mainbook.html" class="event-link">
+            <div class="event">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.m5xC0Jyb2-MaWzqg9rdoYgHaEK&pid=Api&P=0&h=180" alt="Event Name">
+                <h4>Cricket League</h4>
+                <p>Exciting cricket matches with top players from around the world.</p>
+                 <!-- Updated information for Abstract Art Display -->
+                 <p><strong>Date:</strong>September 15, 2024</p>
+                 <p><strong>Location:</strong>Anand</p>
+                 <p>Better Game play shown again !</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <a href="mainbook.html" class="event-link">
+            <div class="event">
+                <img src="http://www.kristofer.ro/wp-content/uploads/2017/03/street-food-festival-cluj.jpg" alt="Event Name">
+                <h4>Street Food Events</h4>
+                <p>Indulge in delicious street food classics and creative culinary creations.</p>
+                    <!-- Updated information for Abstract Art Display -->
+                    <p><strong>Date:</strong>September 1-5, 2024</p>
+                    <p><strong>Location:</strong>Ahemdabad</p>
+                    <p>Food will best stratergy begings !</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <a href="mainbook.html" class="event-link">
+            <div class="event">
+                <img src="https://havokjournal.com/wp-content/uploads/2021/04/Bitcoin-India-Investment-scaled.jpeg" alt="Event Name">
+                <h5>BitCoin Event</h5>
+                    <p>the latest market trends and technological advancements</p>
+                    <!-- Updated information for Abstract Art Display -->
+                    <p><strong>Date:</strong>September 10-11, 2024</p>
+                    <p><strong>Location:</strong>Ahemdabad</p>
+                    <p>connections are forged and collaborations blossom</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <a href="mainbook.html" class="event-link">
+            <div class="event">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8W_8P7vgaSGfTiGdgsjuK6GszMGM-ePHoIh_VjJGl8OUz6ETcZq4ymvb0ImK5vLrnjklx31I60nKSa_EMWPBdPbPXTDCjUbyXt2AoKyLeyxzRcFcdBOXZdnhXfSY0DA5uxaU3Gypfv3gkpDaYT9zB_JS_CzLiT9zi9s_leznFx025kcE-BMvCK6tZ6A/s1280/photo_2023-03-14_22-43-02.jpg" alt="Event Name">
+               
+                <h5>Crypto Events</h5>
+                <p>atest advancements in blockchain technology</p>
+                    <!-- Updated information for Abstract Art Display -->
+                    <p><strong>Date:</strong>Octobor 1-7, 2024</p>
+                    <p><strong>Location:</strong>Anand</p>
+                    <p>seasoned trader looking to stay ahead </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <a href="mainbook.html" class="event-link">
+            <div class="event">
+                <img src="https://www.thecoinrepublic.com/wp-content/uploads/2020/01/litecoin.png" alt="Event Name">
+                <h5>LiteCoin Event</h5>
+                <p>nception as a peer-to-peer cryptocurrency to its current status</p>
+                    <!-- Updated information for Abstract Art Display -->
+                    <p><strong>Date:</strong>August 1, 2024</p>
+                    <p><strong>Location:</strong>Ahemdabad</p>
+                    <p> participants depart with a renewed sense of inspiration and purpose</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Include Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

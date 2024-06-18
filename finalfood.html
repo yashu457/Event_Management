@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food-Festival Events</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Body background */
+        body {
+            background-image: url('file:///C:/xampp/htdocs/Event/Foodfestivalback.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            /* Optional: Add a background color fallback */
+            background-color: #f8f9fa; /* Light gray */
+            /* Adjust text color for better readability on top of the background image */
+            color: #333;
+            padding-bottom: 100px; /* Add padding at the bottom for footer */
+        }
+
+        /* Header styles */
+        .header {
+            padding: 20px 0;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-bottom: 1px solid #ccc; /* Bottom border for separation */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+        }
+
+        /* Carousel image styles */
+        .carousel-item img {
+            max-height: 400px; /* Adjust the maximum height of carousel images */
+            width: auto; /* Maintain aspect ratio */
+            object-fit: cover;
+        }
+
+        /* White box (card) styles */
+        .white-box {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Footer styles */
+   
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            text-align: center;
+            padding: 10px 0;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+        }
+
+        footer p {
+            margin: 0; /* Remove default margin for <p> inside footer */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+     
+            <li class="nav-item">
+                <a class="btn btn-primary ml-2" href="#">Registration</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Header -->
+<div class="header">
+    <h1>Welcome to Food-Festival Event</h1>
+</div>
+
+<div class="container mt-5">
+    <!-- Carousel -->
+    <div id="eventCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="" class="d-block w-100" alt="Events">
+                <div class="carousel-caption d-none d-md-block">
+                    
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLHHLv3-zXxpiN0zD1M-2idAkbBxTbyzbDVBNBrsOO&s.jpg" class="d-block w-100" alt="Event 1">
+                <div class="carousel-caption d-none d-md-block">
+    
+        
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://media.istockphoto.com/id/1401515170/vector/farmers-market-local-food-stalls-with-people-shopping-farm-produce.jpg?s=612x612&w=0&k=20&c=zZYf2Dxci0onT5FP8jRPNbYfnXZ7t1EwO6heIvJqQMo=.jpg" class="d-block w-100" alt="Event 2">
+                <div class="carousel-caption d-none d-md-block">
+                    
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://static.vecteezy.com/system/resources/previews/004/379/625/non_2x/street-food-festival-poster-template-fast-food-fest-brochure-cover-booklet-page-concept-design-with-flat-illustrations-meal-sale-advertising-flyer-leaflet-banner-layout-idea-vector.jpg" class="d-block w-100" alt="Event 3">
+                <div class="carousel-caption d-none d-md-block">
+                   
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://media.istockphoto.com/id/665393236/photo/business-people-meeting-eating-discussion-cuisine-party-concept.jpg?s=612x612&w=0&k=20&c=OWikKg0p7VwcS8ipa8oPxaOrSkgb9bc0nnQtp7_wYqA=.jpg" class="d-block w-100" alt="Event 3">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+            
+            
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#eventCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#eventCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- White box (card) for additional content -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .white-box {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        /* Customize specific sections */
+
+        /*  Food-Festival Event */
+        .foodfestival-section {
+            background-color: #e4f2fd;
+        }
+
+        /*  International-Food Event */
+        .internationalfood-section {
+            background-color: #e3f2fd;
+        }
+
+        /* Specialty-Food Events */
+        .specialtyfood-section {
+            background-color: #e8f5e9;
+        }
+
+        /* FarmerMarket-Food Events */
+        .farmermarket-section {
+            background-color: #fff9c4;
+        }
+
+        /* Street-Food Events */
+        .streetfood-section {
+            background-color: #fff9c4;
+        }
+
+        /* Family-friendly Food Events */
+        .familyfriendly-section {
+            background-color: #fff9c4;
+        }
+
+       
+
+    
+    </style>
+</head>
+<body>
+    <div class="white-box foodfestival-section">
+        <h2>Food-Festival Event:</h2>
+        <p>Food festivals are exciting events that celebrate culinary diversity, showcasing a wide array of food and drink offerings from different cultures and regions. These festivals often feature local and international cuisines, specialty dishes, cooking demonstrations, tastings, and opportunities to interact with chefs and food artisans. Here's some information about common types of food festival events.</p>
+
+       
+        
+        
+    </div>
+
+    <body>
+        <div class="white-box internationalfood-section">
+            <h3>International Food-Festival</h3>
+            <p>These festivals highlight cuisines from around the world, bringing together flavors and dishes from diverse                 cultures.Attendees can sample traditional foods from different countries, ranging from street food to gourmet cuisine.
+            Ethnic Food Festivals: Ethnic food festivals focus on celebrating the culinary heritage of specific ethnic communities. These festivals often feature traditional dishes, music, and cultural performances that reflect the unique flavors and culinary traditions of a particular culture or region.</p>
+
+        </div>
+    </body>
+
+    <body>
+        <div class="white-box specialtyfood-section">
+            <h3>Specialty Food-Festival</h3>
+            <p>Specialty food festivals are dedicated to specific types of foods or ingredients. For example, there are festivals dedicated to cheese, chocolate, seafood, BBQ, wine, beer, and more. These festivals are a paradise for food enthusiasts looking to explore and indulge in their favorite food categories.</p>
+            
+        </div>
+    </body>
+
+    <body>
+        <div class="white-box farmermarket-section">
+            <h3>Farmer Markets and Food-Fairs</h3>
+            <p>While not strictly festivals, farmers' markets and food fairs are regular events that celebrate local produce and artisanal products. They often feature fresh fruits, vegetables, meats, cheeses, baked goods, and handmade crafts from local producers and vendors.</p>  
+            
+        </div>
+    </body>
+    <body>
+        <div class="white-box streetfood-section">
+            <h3>Street-Food Festival</h3>
+            <p>Street food festivals showcase the vibrant and flavorful world of street cuisine. Attendees can sample street food classics and innovative creations from food trucks, stalls, and vendors.</p>  
+            
+        </div>
+    </body>
+   
+    <body>
+        <div class="white-box Familyfriendly-section">
+            <h3>Family-Friendly Food Event</h3>
+            <p>Family-Friendly Food Events: Many food festivals offer family-friendly activities such as cooking workshops for kids, entertainment, and games, making them enjoyable outings for all ages</p>  
+            
+        </div>
+    </body>
+   
+<!-- Footer -->
+<footer>
+    <p> 2024 Food-Festival Events</p>
+</footer>
+
+<!-- Link Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

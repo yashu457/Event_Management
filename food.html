@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Festival Information</title>
+    <style>
+        /* CSS styles for the layout */
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        /* Header styling */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        /* Card styling */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive layout adjustments */
+        @media screen and (max-width: 800px) {
+            .leftcolumn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Food Festival Information</h1>
+    <p>Discover upcoming food festival events and culinary delights!</p>
+</div>
+
+<div class="row" id="foodEventsContainer">
+    <!-- Food festival events will be dynamically inserted here -->
+</div>
+
+<script>
+    // Sample data for food festival events
+    var foodEventsData = [
+        {
+            title: "Taste of Italy",
+            imageUrl: "https://via.placeholder.com/300", // Placeholder image URL
+            description: "Experience authentic Italian cuisine at our annual Taste of Italy festival.",
+            date: "July 15-17, 2024",
+            location: "City Center Plaza"
+        },
+        {
+            title: "Spicy Street Food Festival",
+            imageUrl: "https://via.placeholder.com/300", // Placeholder image URL
+            description: "Indulge in a variety of spicy street food from around the world.",
+            date: "August 20-22, 2024",
+            location: "Downtown Street Market"
+        },
+        {
+            title: "Sweet Dessert Delights",
+            imageUrl: "https://via.placeholder.com/300", // Placeholder image URL
+            description: "Satisfy your sweet tooth with a selection of delectable desserts and treats.",
+            date: "September 12-14, 2024",
+            location: "Parkside Event Center"
+        }
+        // Add more food festival events as needed
+    ];
+
+    // Function to create and append food event cards with detailed information
+    function createFoodEventCards() {
+        var foodEventsContainer = document.getElementById('foodEventsContainer');
+
+        // Loop through food events data and create cards
+        foodEventsData.forEach(function(event) {
+            var card = document.createElement('div');
+            card.className = 'card';
+
+            var title = document.createElement('h2');
+            title.textContent = event.title;
+
+            var image = document.createElement('img');
+            image.src = event.imageUrl;
+            image.alt = event.title;
+            image.style.width = '100%'; // Adjust image width as needed
+
+            var description = document.createElement('p');
+            description.textContent = event.description;
+
+            var date = document.createElement('p');
+            date.innerHTML = `<strong>Date:</strong> ${event.date}`;
+
+            var location = document.createElement('p');
+            location.innerHTML = `<strong>Location:</strong> ${event.location}`;
+
+            // Append elements to the card
+            card.appendChild(title);
+            card.appendChild(image);
+            card.appendChild(description);
+            card.appendChild(date);
+            card.appendChild(location);
+
+            // Append card to the food events container
+            foodEventsContainer.appendChild(card);
+        });
+    }
+
+    // Call the function to populate food event cards when the page loads
+    window.onload = function() {
+        createFoodEventCards();
+    };
+</script>
+
+</body>
+</html>
